@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20B7BF7CB839B54DCFF772DF /* libPods-CYWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8460EAE3D794A550133B113 /* libPods-CYWeChat.a */; };
 		228A6E7F216C58CF001EFFA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 228A6E7E216C58CF001EFFA8 /* AppDelegate.m */; };
 		228A6E82216C58CF001EFFA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 228A6E81216C58CF001EFFA8 /* ViewController.m */; };
 		228A6E85216C58CF001EFFA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 228A6E83216C58CF001EFFA8 /* Main.storyboard */; };
@@ -26,6 +27,9 @@
 		228A6E89216C58D0001EFFA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		228A6E8B216C58D0001EFFA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		228A6E8C216C58D0001EFFA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6ABD3535454E695EE6512D7E /* Pods-CYWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYWeChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-CYWeChat/Pods-CYWeChat.release.xcconfig"; sourceTree = "<group>"; };
+		F0346DD0C5F22A256BD38653 /* Pods-CYWeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYWeChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CYWeChat/Pods-CYWeChat.debug.xcconfig"; sourceTree = "<group>"; };
+		F8460EAE3D794A550133B113 /* libPods-CYWeChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CYWeChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20B7BF7CB839B54DCFF772DF /* libPods-CYWeChat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				228A6E7C216C58CF001EFFA8 /* CYWeChat */,
 				228A6E7B216C58CF001EFFA8 /* Products */,
+				DFD7538CCD3245B308E13E7D /* Pods */,
+				AE3C5B21CF6F39FCBF53A1D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +78,23 @@
 			path = CYWeChat;
 			sourceTree = "<group>";
 		};
+		AE3C5B21CF6F39FCBF53A1D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8460EAE3D794A550133B113 /* libPods-CYWeChat.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFD7538CCD3245B308E13E7D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0346DD0C5F22A256BD38653 /* Pods-CYWeChat.debug.xcconfig */,
+				6ABD3535454E695EE6512D7E /* Pods-CYWeChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 228A6E90216C58D0001EFFA8 /* Build configuration list for PBXNativeTarget "CYWeChat" */;
 			buildPhases = (
+				F6670A2D247822B4B5F1F973 /* [CP] Check Pods Manifest.lock */,
 				228A6E76216C58CF001EFFA8 /* Sources */,
 				228A6E77216C58CF001EFFA8 /* Frameworks */,
 				228A6E78216C58CF001EFFA8 /* Resources */,
+				94ED011699FE3B11D458F410 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,6 +161,71 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		94ED011699FE3B11D458F410 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CYWeChat/Pods-CYWeChat-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/JSBadgeView/JSBadgeView.bundle",
+				"${PODS_ROOT}/LBXScan/LBXScan/UI/CodeScan.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-back.png",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-help.html",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-helpicons.png",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-samples.png",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JSBadgeView.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CodeScan.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SAMKeychain.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-back.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-help.html",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-helpicons.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-samples.png",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYWeChat/Pods-CYWeChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6670A2D247822B4B5F1F973 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CYWeChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		228A6E76216C58CF001EFFA8 /* Sources */ = {
@@ -283,6 +374,7 @@
 		};
 		228A6E91216C58D0001EFFA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0346DD0C5F22A256BD38653 /* Pods-CYWeChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +392,7 @@
 		};
 		228A6E92216C58D0001EFFA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ABD3535454E695EE6512D7E /* Pods-CYWeChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
